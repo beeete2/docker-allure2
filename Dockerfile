@@ -2,6 +2,7 @@ FROM java:8
 
 ARG ALLURE2_VERSION=2.3.5
 ARG SHA=9b26693d78ffa92eabd4be7233403352027ac43dbc9a21bdb29be27d9e5a1177
+ENV ALLURE_NO_ANALYTICS=1
 
 RUN cd \
     && mkdir -p /opt/allure2 \
